@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #1B244A;
+    font-family: 'Kumar One', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 50vh;
+}
+h1{
+    text-align: center;
+    color: #F94F6D;
+    font-size: 5rem;
+    padding: 18px 20px;
+}
+h4, h5{
+    color: #fff; 
+}
+h5{
+   margin: 0;
+   margin-bottom: .2rem;
+}
+
+/* HOME AND GUEST SECTION */
+
+.home h3, .guest h3{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.home, .guest{
+    width: 300px;
+    margin: 0 2rem;
+}
+#home-score, #guest-score{
+    margin: 0 0 .5rem 0;
+}
+.score-container{
+    background-color: #080001;
+}
+
+/* FOUL AND PERIOD COUNT SECTION */
+
+.home-foul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20%;
+}
+.guest-foul{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 20%;
+}
+#foul-countHome, #period-count, #foul-countGuest{
+    color: #fff;
+    font-size: 2rem;
+    background-color: #000;
+}
+#period-count{
+    padding: .3rem 1rem
+}
+.period h3{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+
+
+ /*BUTTON CONTROL SECTION */ 
+ .main-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    color: #9AABD8;
+    border: none;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.homeTeam, .homeTeam h4, .guestTeam h4{
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .home, .guest{
+        width: 45%;
+        max-width: 45%;
+        margin: 0 .5rem;
+    }
+    .home-foul, .guest-foul{
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .home, .guest{
+        width: 50%;
+        max-width: 50%;
+        margin: 0 .5rem;
+    }
+    .home-foul, .guest-foul{
+        width: 30%;
+    }
+
+}

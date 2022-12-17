@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="container">
+            <div class="home">
+                <h3>HOME</h3>
+                <div class="score-container">
+                    <h1 id="home-score">0</h1>
+                </div>
+                <div class="home-foul">
+                <h5>Fouls</h5>
+                <span id="foul-countHome">0</span>
+                </div>
+                
+            </div>
+            <div class="period">
+                <h3>Period</h3>
+                <span id="period-count">1</span>
+                
+            </div>
+            
+            <div class="guest">
+                <h3>GUEST</h3>
+                <div class="score-container">
+                    <h1 id="guest-score">0</h1>
+                </div>
+                <div class="guest-foul">
+                    <h5>Fouls</h5>
+                    <span id="foul-countGuest">0</span>
+                    </div>
+            </div>
+
+
+        </div>
+        <div class="main-control">
+            <div class="homeTeam">
+                <h4>Home Control</h4>
+                <button onclick="plusOne()">+1</button>
+                <button onclick="plusTwo()">+2</button>
+                <button onclick="plusThree()">+3</button>
+                <button onclick="minusOne()">-1</button>
+                <button onclick="homeFoul()">Foul +1</button>
+                <button onclick="homeFoulMinus()">Foul -1</button>
+                <button onclick="periodCount()">Period +1</button>
+                <button onclick="reset()">Reset</button>
+
+            </div>
+            <div class="guestTeam">
+                <h4>Guest Control</h4>
+                <button onclick="plusOneGuest()">+1</button>
+                <button onclick="plusTwoGuest()">+2</button>
+                <button onclick="plusThreeGuest()">+3</button>
+                <button onclick="minusOneGuest()">-1</button>
+                <button onclick="guestFoul()">Foul +1</button>
+                <button onclick="guestFoulMinus()">Foul -1</button>
+                <button onclick="reset()">Reset</button>
+                
+            </div>
+        </div>
+
+
+
+
+        <script src="index.js"></script>
+</body>
+</html>
